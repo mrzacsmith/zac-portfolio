@@ -13,8 +13,8 @@ function App() {
 
         <div>
         <Route to='/' component={LandingPage} />
-        {/* <Route to='/about' component={AboutMe} />
-        <Route to='/projects' component={Projects} />
+        <Route to='/about' component={AboutMe} />
+        {/* <Route to='/projects' component={Projects} />
         <Route to='/contact' component={Contact} /> */}
         </div>
 
