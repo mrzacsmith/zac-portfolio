@@ -10,17 +10,19 @@ import nodej from '../images/node-js-logo.jpg'
 
 function Blog(){
 
-
-     return(<div>Hello this is the blog
-
+     return(
+     <div>
+           <div className="blog-name">
+                    <h1 className="underline"><span className="blog-highlight">Blog</span></h1>
+          </div>
 
           <div className='blog'>
-               
+
                <a href='https://medium.com/@mrzacsmith'>
                <div className="blog-container">
                <img src={medium} alt='medium' className="blog-image" />
                <div className="blog-action">
-                         <div className="blog-title">Medium Blog</div>
+                         <div className="blog-title">Medium Profile</div>
                          <a href='https://medium.com/@mrzacsmith' /> 
                     </div>
                </div>
@@ -39,7 +41,7 @@ function Blog(){
                <div className="blog-container">
                     <img src={weather} alt='weather' className="blog-image"/>
                     <div className="blog-action">
-                         <div className="blog-title">Build a Weather App Using Vanilla JavaScript</div>
+                         <div className="blog-title">Build a Weather App Using JavaScript</div>
                     </div>
                </div>
                </a>

@@ -1,50 +1,350 @@
 body{
-    background-color:#2D2C2C;
-
+  background-color:#2D2C2C;
+font-family: 'Montserrat', sans-serif;
 }
+
+h1 h2 h3 {
+font-family: 'Montserrat', sans-serif;
+}
+
+/* NAV BAR */
+nav{
+  height:44px;
+  background-color:#2D2C2C;
+  padding:0 3%;
+  display:flex;
+  justify-content:center;
+}
+nav a{
+  text-decoration:none;
+  color:#B0B0B0;
+  font-size:1.15rem;
+  padding:13px;
+}
+nav:hover{
+  /* opacity:0.9; */
+  color:#c4c4c4;
+}
+nav a:hover{
+  text-decoration:underline;
+  transform:scale(1.08);
+  transition: .5s cubic-bezier(0.2,0.8,0.2,1);
+  color:#c4c4c4;
+}
+.nav-link-container{
+  width:40%;
+  display:flex;
+  justify-content:space-between;
+}
+@media only screen and (max-width: 500px){
+  nav{
+    display:flex;
+    justify-content:space-between;
+  }
+  .nav-link-container{
+    width:100%;
+  }
+  nav a{
+    font-size:1rem;
+  }
+}
+@media only screen and (max-width: 700px){
+  .nav-bar{
+    max-width:800px;
+    width:10%;
+  }
+  .nav-link-container{
+    justify-content:space-evenly;
+    width:100%;
+  }
+  nav a{
+    font-size:1rem;
+  }
+}
+@media only screen and (max-width: 900px){
+  .nav-bar{
+    max-width:900px;
+    width:100%;
+  }
+  .nav-link-container{
+    width:70%;
+  }
+}
+.nav-bar{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.97;
+    background: #fcfcfb;
+    font-size: 1.2rem;
+    z-index: 99999;
+}
+
+
+
+
+
+/* LANDING PAGE */
+.underline--magical {
+  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.08em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in; */
+  color:white;
+}
+/* .underline--magical:hover{
+    background-size: 100% 88%;
+} */
+
+
 
 .landing-page{
   max-width:800px;
   width:100%;
   margin:0 auto;
   background-color:#2D2C2C;
-  color:#9F9C9C;
-}
-
-.landingIntro{
-  width:100%;
-  max-width:400px;
+  color:#B0B0B0;
+  margin-top:50px;
+  /* border:1px solid red; */
+  height:90vh;
+  font-size:2.5rem;
+  font-weight:600;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 .emphasized-intro{
   color:white;
-  /* background-color:#ffc733; */
+  /* border:1px solid red; */
 }
+.name-title{
+  width:75%;
+}
+.name-title h1{
+  margin:0;
+}
+.credentials-title{
+  font-size:1.5rem;
+}
+/* .smaller-title{
+  font-size:1rem;
+} */
+
+.brush{
+width:10%;
+  background-repeat: no-repeat;
+/* background-size: 100% 95%; */
+padding: 8px 0;
+}
+.highlight {
+background: url(http://www.festivalclaca.cat/pics/b/21/215083_paint-stroke-png.png);
+background-repeat: no-repeat;
+background-size: 100% 95%;
+padding: 10px 60px;
+color:white;
+
+}
+
+
+
+
 
 
 /* todo - ABOUT ME SECTION */
 .profile-pic{
   height:100px;
 }
+.aboutme-container{
+  margin:0 auto;
+  max-width:800px;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  color:white;
+  margin-bottom:13%;
+  /* border:1px solid red; */
+}
+.about{
+  width:30%;
+}
+.about-content{
+  display:flex;
+  justify-content:space-between;
+}
+
+
+/* TRIAL 2 */
+.about-content-two{
+  display:flex;
+  justify-content:space-between;
+}
+.about-description{
+  width:70%;
+}
+.about-content-two img{
+  width:25%;
+  height:auto;
+  border-radius:5px;
+}
+.about-title{
+  text-align:center;
+  font-size:3rem;
+  font-weight:600;
+}
+.about-headline{
+background: url(https://pub-static.haozhaopian.net/assets/stickers/6555/1db6ccd3-1be9-474a-8d98-aaf32fed654b_medium_thumb.jpg);
+background-repeat: no-repeat;
+background-size: 100% 95%;
+padding: 10px 60px;
+color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* todo - PROJECTS SECTION */
+.project-header{
+  width:100%;
+  text-align:center;
+  color:white;
+}
+.project-container{
+  max-width:900px;
+  width:100%;
+  margin:0 auto;
+  margin-bottom:30px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.project{
+  margin:0 auto;
+  max-width:700px;
+  margin-bottom:15%;
+  color:white;
+}
+.project img{
+  max-width:700px;
+  width:100%;
+  box-shadow: 0 8px 5px rgba(0,0 ,0, .55);
+  margin-bottom:0;
+}
+.project h1{
+  margin-bottom:0;
+  margin-top:10px;
+  font-size:2rem;
+  
+}
+
+.project h3{
+  margin:0;
+}
+.project-description{
+  margin-top:0;
+}
+
+.tech-stack{
+  margin-top:0;
+  margin-bottom:15px;
+  text-align:center;
+  color:#B0B0B0;
+  font-size:0.95rem;
+}
+
+.project-grad{
+  display:flex;
+  padding-top:0;
+}
+
+.project-gradient{
+  padding:4px;
+  margin-right:10px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.project-subtitle{
+  font-size:1rem;
+  font-weight:400;
+  color:#B0B0B0;
+}
+.project-button{
+  background-color:#4F4F4F;
+  border:none;
+  padding:5.5px 35px;
+  border-radius:10px;
+  color:white;
+  font-size:1rem;
+  font-weight:400;
+  margin:0 10px;
+}
+.project-button:hover{
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+}
+.project-dec{
+  border-bottom: 1px solid black;
+  width:60%;
+}
+.project-header-highlight{
+  background: url(http://www.pngmart.com/files/8/Brush-Stroke-Background-PNG.png);
+background-repeat: no-repeat;
+background-size: 100% 95%;
+padding: 10px 60px;
+color:white;
+}
+
+
+
+
+
+
+
 
 
 
 /* TODO: CHANGE WIDHT TO 100% / height to auto   */
+.blog{
+  max-width:900px;
+  width:100%;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.blog-title{
+  margin:0;
+}
+
 .blog img{
   width:100%;
   height:100%;
-  filter:grayscale(100%);
+  /* filter:grayscale(100%); */
   background-color:#ece9ee;
   overflow:hidden;
   border-radius:5px;
   box-shadow: 0 10px 5px rgba(0,0 ,0, .55);
+  transition: transform .3s;
 }
 
 .blog-container {
   position: relative;
   width:170px;
   height:170px;
-  margin:15px;
-  /* border:1px solid black; */
+  margin:30px 25px;
 }
 
 .blog-image {
@@ -57,7 +357,7 @@ body{
 }
 
 .blog-action {
-  transition: .5s ease-in;
+  transition: .2s ease-in;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -70,6 +370,8 @@ body{
 
 .blog-container:hover .blog-image {
   opacity: 0.4;
+  transform: scale(1.1);
+  filter:grayscale(0%);
 }
 
 .blog-container:hover .blog-action {
@@ -77,20 +379,31 @@ body{
 }
 
 .blog-title {
-  /* background-color: #4CAF50; */
   color: white;
   font-size: 16px;
-  /* border:1px solid red; */
   width:100%;
+  margin:0;
+  padding:0;
 }
 
-.blog{
+.blog-name{
+  color:white;
   max-width:900px;
   width:100%;
   margin:0 auto;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-    background-color:#2D2C2C;
-
+  text-align:center;
+}
+.underline{
+  margin-left:33px;
+  margin-bottom:0;
+  font-weight:600;
+  font-size:3rem;
+}
+.blog-highlight{
+  background: url(https://i.pinimg.com/originals/6e/e0/ac/6ee0acd8a19bfcda34f1717abdf507f8.png);
+  /* background: url(https://www.onlygfx.com/wp-content/uploads/2019/03/10-dark-blue-watercolor-brush-stroke-2.png); */
+background-repeat: no-repeat;
+background-size: 100% 95%;
+padding: 10px 60px;
+color:white;
 }
