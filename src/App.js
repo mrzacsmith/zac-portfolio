@@ -15,9 +15,9 @@ function App() {
         <div>
         <Route to='/' component={LandingPage} />
         <Route to='/about' component={AboutMe} />
-        {/* <Route to='/projects' component={Projects} /> */}
+        <Route to='/projects' component={Projects} />
         <Route to='/blog' component={Blog} />
-        {/* <Route to='/contact' component={Contact} /> */}
+        <Route to='/contact' component={Contact} />
         </div>
 
     </div>
