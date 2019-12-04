@@ -31,15 +31,23 @@ nav a:hover{
   transition: .5s cubic-bezier(0.2,0.8,0.2,1);
   color:#c4c4c4;
 }
+/* nav a:hover{
+  background: url(https://pub-static.haozhaopian.net/assets/stickers/6555/1db6ccd3-1be9-474a-8d98-aaf32fed654b_medium_thumb.jpg);
+background-repeat: no-repeat;
+background-size: 100% 95%;
+padding: 10px 60px;
+color:white;
+} */
+
 .nav-link-container{
-  width:40%;
+  width:60%;
   display:flex;
   justify-content:space-between;
 }
 @media only screen and (max-width: 500px){
   nav{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
   }
   .nav-link-container{
     width:100%;
@@ -85,21 +93,11 @@ nav a:hover{
 
 
 
-/* LANDING PAGE */
-.underline--magical {
-  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.08em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in; */
+
+/* TODO: LANDING PAGE */
+.name{
   color:white;
 }
-/* .underline--magical:hover{
-    background-size: 100% 88%;
-} */
-
-
-
 .landing-page{
   max-width:800px;
   width:100%;
@@ -107,6 +105,7 @@ nav a:hover{
   background-color:#2D2C2C;
   color:#B0B0B0;
   margin-top:50px;
+  padding-left:20px;
   /* border:1px solid red; */
   height:90vh;
   font-size:2.5rem;
@@ -141,10 +140,9 @@ padding: 8px 0;
 .highlight {
 background: url(http://www.festivalclaca.cat/pics/b/21/215083_paint-stroke-png.png);
 background-repeat: no-repeat;
-background-size: 100% 95%;
-padding: 10px 60px;
+background-size: 98% 95%;
+padding: 10px 55px;
 color:white;
-
 }
 
 
@@ -154,7 +152,8 @@ color:white;
 
 /* todo - ABOUT ME SECTION */
 .profile-pic{
-  height:100px;
+  width:100%;
+  height:auto;
 }
 .aboutme-container{
   margin:0 auto;
@@ -165,10 +164,12 @@ color:white;
   justify-content:center;
   color:white;
   margin-bottom:13%;
+  font-size:1.1rem;
   /* border:1px solid red; */
 }
 .about{
   width:30%;
+  height:auto;
 }
 .about-content{
   display:flex;
@@ -194,13 +195,13 @@ color:white;
   font-size:3rem;
   font-weight:600;
 }
-.about-headline{
+/* .about-headline{
 background: url(https://pub-static.haozhaopian.net/assets/stickers/6555/1db6ccd3-1be9-474a-8d98-aaf32fed654b_medium_thumb.jpg);
 background-repeat: no-repeat;
 background-size: 100% 95%;
 padding: 10px 60px;
 color:white;
-}
+} */
 
 
 
@@ -222,6 +223,7 @@ color:white;
   width:100%;
   text-align:center;
   color:white;
+  font-size:2rem;
 }
 .project-container{
   max-width:900px;
@@ -243,12 +245,16 @@ color:white;
   width:100%;
   box-shadow: 0 8px 5px rgba(0,0 ,0, .55);
   margin-bottom:0;
+  filter:sepia(20%);
 }
+.project img:hover{
+  filter:sepia(0%);
+}
+
 .project h1{
   margin-bottom:0;
   margin-top:10px;
   font-size:2rem;
-  
 }
 
 .project h3{
@@ -274,7 +280,9 @@ color:white;
 .project-gradient{
   padding:4px;
   margin-right:10px;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-color:#4F4F4F;
+
 }
 .project-subtitle{
   font-size:1rem;
@@ -298,14 +306,14 @@ color:white;
   border-bottom: 1px solid black;
   width:60%;
 }
-.project-header-highlight{
+/* .project-header-highlight{
   background: url(http://www.pngmart.com/files/8/Brush-Stroke-Background-PNG.png);
 background-repeat: no-repeat;
 background-size: 100% 95%;
 padding: 10px 60px;
 color:white;
 }
-
+ */
 
 
 
@@ -399,11 +407,55 @@ color:white;
   font-weight:600;
   font-size:3rem;
 }
-.blog-highlight{
-  background: url(https://i.pinimg.com/originals/6e/e0/ac/6ee0acd8a19bfcda34f1717abdf507f8.png);
-  /* background: url(https://www.onlygfx.com/wp-content/uploads/2019/03/10-dark-blue-watercolor-brush-stroke-2.png); */
+
+/* .blog-highlight{
+  background: url(https://d2bnh4l4ivgux0.cloudfront.net/unshoppable_producs/89e689ce-7c97-44d7-b494-d3c49053f339.png);
 background-repeat: no-repeat;
 background-size: 100% 95%;
 padding: 10px 60px;
 color:white;
+} */
+ /* background: url(https://i.pinimg.com/originals/6e/e0/ac/6ee0acd8a19bfcda34f1717abdf507f8.png); */
+  /* background: url(https://www.onlygfx.com/wp-content/uploads/2019/03/10-dark-blue-watercolor-brush-stroke-2.png); */
+
+
+
+
+
+
+
+
+
+  /* TODO CONTACT  */
+.contact-container{
+  margin-top:15%;
+  width:100%;
+  background-color:#21252A;
+  height:140px;
+  display:flex;
+  align-items:center;
+}
+.icon-container{
+  max-width:600px;
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin:0 auto;
+  padding-top:10px;
+}
+.icon{
+  height:55px;
+  -webkit-filter: grayscale(95%);
+  filter: grayscale(95%);
+  box-shadow: 0 7px 5px rgba(0,0 ,0, .55);
+}
+.icon:hover{
+  -webkit-filter: grayscale(0%);
+  filter:saturate(1.5);
+    transform:scale(1.08);
+  transition: .15s;
+}
+#medium-icon{
+  border-radius:2px;
 }

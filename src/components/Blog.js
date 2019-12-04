@@ -12,9 +12,9 @@ function Blog(){
 
      return(
      <div>
-           <div className="blog-name">
+           {/* <div className="blog-name">
                     <h1 className="underline"><span className="blog-highlight">Blog</span></h1>
-          </div>
+          </div> */}
 
           <div className='blog'>
 

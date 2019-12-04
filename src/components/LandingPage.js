@@ -12,16 +12,13 @@ function LandingPage(props){
                               <a href="#AboutMe">About</a>
                               <a href="#Projects">Projects</a>
                               <a href="#Contact">Contact</a>
-                              {/* <button className="resume" onClick={resumeButton}>Resume</button> */}
                               <a href="https://drive.google.com/file/d/1ibcZg4aKwkamiGJtr4BCL2yFeXZCwqLD/view?usp=sharing" className="resume">Resume</a>
                          </div>
                     </nav>
                </div>
-               {/* <div className="logo-container"><img src={Logo} alt="logo" className="logo" />
-               </div> */}
-               <div className="landing-page">
-                    <div className="name-title">Hello, my name is <h1><span className="underline--magical">Zachery Smith</span>.</h1></div> 
 
+               <div className="landing-page">
+                    <div className="name-title">Hello, my name is <h1><span className="name">Zachery Smith</span>.</h1></div> 
 
                     <div className="credentials-title">
                     < br/>I am a <span className="emphasized-intro one highlight">Full Stack Web Developer</span>
