@@ -4,9 +4,9 @@ import immunify from '../images/immunify.png'
 function Projects(){
 
      return(<div className="project-container">
-          <div className="project-header">
+          {/* <div className="project-header">
                <h1><span className="project-header-highlight">Projects</span></h1>
-          </div>
+          </div> */}
 
           <div className="project">
                <div>
