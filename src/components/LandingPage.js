@@ -19,16 +19,33 @@ function LandingPage(props){
                </div>
 
                <div className="landing-page">
-                    <div className="name-title">Hello, my name is <h1><span className="name">Zachery Smith</span>.</h1></div> 
+                    {/* <div className="name-title">Hello, my name is <h1><span className="name">Zachery Smith</span>.</h1>
+                         <div className="credentials-title">
+                         < br/>I am a <span className="emphasized-intro one highlight">Full Stack Web Developer</span>
+                         < br/>with a <span className="emphasized-intro">Masters in Cybersecurity</span>.
+                         < br/><span className="smaller-title">Formerly a </span><span className="emphasized-intro three">computer science professor</span>, 
+                         < br/><span className="emphasized-intro three">cybersecurity researcher</span>,
+                         < br/>and <span className="emphasized-intro three">cryptocurrency data officer</span>.
+                         </div>
+                    </div>  */}
 
-                    <div className="credentials-title">
-                    < br/>I am a <span className="emphasized-intro one highlight">Full Stack Web Developer</span>
-                    < br/>with a <span className="emphasized-intro">Masters in Cybersecurity</span>.
-                    < br/><span className="smaller-title">Formerly a </span><span className="emphasized-intro three">computer science professor</span>, 
-                    < br/><span className="emphasized-intro three">cybersecurity researcher</span>,
-                    < br/>and <span className="emphasized-intro three">cryptocurrency data officer</span>.
+
+
+                    <div className="landing-page-title">
+                         <p>
+                              <span className="name-intro">Hello, my name is</span>
+                              <br /><span className="name">Zachery Smith</span>. 
+                              <br />I am a <span className="white highlight">Full Stack Web Developer </span>
+                              <br />with a <span className="white">Master's in Cybersecurity</span>. 
+                              <br />Former <span className="white">computer science professor</span>,
+                              <br /><span className="white">cybersecurity researcer</span>,
+                              <br />and <span className="white">cryptocurrency data officer</span>.
+                         </p>
                     </div>
                </div>
+
+
+
           </div>
      )
 }
