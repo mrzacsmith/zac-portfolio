@@ -14,6 +14,7 @@ nav{
   padding:0 3%;
   display:flex;
   justify-content:center;
+  opacity:0.98;
 }
 nav a{
   text-decoration:none;
@@ -104,10 +105,9 @@ color:white;
   margin:0 auto;
   background-color:#2D2C2C;
   color:#B0B0B0;
-  margin-top:50px;
-  padding-left:20px;
-  /* border:1px solid red; */
-  height:90vh;
+  /* margin-top:50px; */
+  /* padding-left:20px; */
+  height:100vh;
   font-size:2.5rem;
   font-weight:600;
   display:flex;
@@ -116,7 +116,6 @@ color:white;
 }
 .emphasized-intro{
   color:white;
-  /* border:1px solid red; */
 }
 .name-title{
   width:75%;
@@ -240,29 +239,33 @@ color:white;
   max-width:700px;
   margin-bottom:15%;
   color:white;
+  transition:0.5s;
+}
+.project:hover{
+  transform:scale(1.1);
+  transition: 0.6s;
 }
 .project img{
   max-width:700px;
   width:100%;
   box-shadow: 0 8px 5px rgba(0,0 ,0, .55);
   margin-bottom:0;
-  filter:sepia(20%);
-}
-.project img:hover{
-  filter:sepia(0%);
 }
 
 .project h1{
-  margin-bottom:0;
-  margin-top:10px;
+  margin:13px 0;
+  margin-bottom:5px;
   font-size:2rem;
 }
 
 .project h3{
-  margin:0;
+  margin:0 auto;
 }
 .project-description{
   margin-top:0;
+  margin-bottom:0;
+  line-height:1.5;
+  font-size:1.05rem;
 }
 
 .tech-stack{
@@ -270,7 +273,7 @@ color:white;
   margin-bottom:15px;
   text-align:center;
   color:#B0B0B0;
-  font-size:0.95rem;
+  font-size:1rem;
 }
 
 .project-grad{
@@ -284,9 +287,13 @@ color:white;
   background-color:#4F4F4F;
 } */
 .project-subtitle{
-  font-size:1rem;
+  font-size:1.05rem;
   font-weight:400;
   color:#B0B0B0;
+}
+.tech-subheader{
+font-size:1.05rem;
+  margin:0 auto;
 }
 .project-button{
   background-color:#4F4F4F;
@@ -296,7 +303,7 @@ color:white;
   color:#B0B0B0;
   font-size:1rem;
   font-weight:400;
-  margin:0 10px;
+  /* margin:0 10px; */
 }
 .project-button:hover{
   color:white;
@@ -314,6 +321,15 @@ padding: 10px 60px;
 color:white;
 }
  */
+ #code-icon{
+   height:auto;
+   width:20px;
+   box-shadow:none;
+   color:white;
+ }
+ #code-google{
+   color:white;
+ }
 
 
 
@@ -428,7 +444,7 @@ color:white;
 
   /* TODO CONTACT  */
 .contact-container{
-  margin-top:15%;
+  margin-top:13%;
   width:100%;
   background-color:#21252A;
   height:170px;
