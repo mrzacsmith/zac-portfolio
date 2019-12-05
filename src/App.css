@@ -23,30 +23,27 @@ nav a{
   font-size:1.15rem;
   padding:13px;
   backface-visibility: hidden;
-  transition:0.5s;
+  transition:0.3s;
+  transform: translateZ(0);
 }
 nav:hover{
   color:#c4c4c4;
 }
 nav a:hover{
-  text-decoration:underline;
-  transform:scale(1.08);
-  transition: .5s cubic-bezier(0.2,0.8,0.2,1);
+    text-decoration:underline;
+  transform: scale(1.05) perspective(1px);
+  transition: .3s cubic-bezier(0.2,0.8,0.2,1);
   color:#c4c4c4;
 }
 .resume{
   color:white;
+  transition:0.5s;
+    backface-visibility: hidden;
 }
 .resume:hover{
   color:white;
+  transition:0.5s;
 }
-/* nav a:hover{
-  background: url(https://pub-static.haozhaopian.net/assets/stickers/6555/1db6ccd3-1be9-474a-8d98-aaf32fed654b_medium_thumb.jpg);
-background-repeat: no-repeat;
-background-size: 100% 95%;
-padding: 10px 60px;
-color:white;
-} */
 
 .nav-link-container{
   width:60%;
@@ -104,17 +101,13 @@ color:white;
 
 
 /* TODO: LANDING PAGE */
-.name{
-  color:white;
-}
+
 .landing-page{
   max-width:800px;
   width:100%;
   margin:0 auto;
   background-color:#2D2C2C;
   color:#B0B0B0;
-  /* margin-top:50px; */
-  /* padding-left:20px; */
   height:100vh;
   font-size:2.5rem;
   font-weight:600;
@@ -122,34 +115,38 @@ color:white;
   flex-direction:column;
   justify-content:center;
 }
-.emphasized-intro{
-  color:white;
-}
-.name-title{
-  width:75%;
-}
-.name-title h1{
-  margin:0;
-}
-.credentials-title{
-  font-size:1.5rem;
-}
-/* .smaller-title{
-  font-size:1rem;
-} */
-
-.brush{
-width:10%;
-  background-repeat: no-repeat;
-/* background-size: 100% 95%; */
-padding: 8px 0;
-}
 .highlight {
-background: url(http://www.festivalclaca.cat/pics/b/21/215083_paint-stroke-png.png);
-background-repeat: no-repeat;
-background-size: 98% 95%;
-padding: 10px 55px;
-color:white;
+  background: url(http://www.festivalclaca.cat/pics/b/21/215083_paint-stroke-png.png);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 5px 45px;
+  padding-right:-5px;
+  color:white;
+  opacity:0.9;
+}
+
+.landing-page-title{
+  font-size:25px;
+  line-height:1.2;
+  word-spacing:1px;
+  /* opacity:0.9; */
+}
+.name{
+  line-height:1.3;
+  font-size:5rem;
+  color:#F0FFFF;
+  padding-bottom:0;
+  margin-bottom:0;
+    letter-spacing:2px;
+
+}
+.name-intro{
+  line-height:0.5;
+  font-size:2rem;
+  margin-bottom:0;
+}
+.white{
+  color:white;
 }
 
 
@@ -250,7 +247,7 @@ color:white;
   transition:0.5s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  -webkit-transform: translateZ(0);
 }
 .project:hover{
   transform:scale(1.05);
@@ -373,7 +370,6 @@ color:white;
   border-radius:5px;
   box-shadow: 0 10px 5px rgba(0,0 ,0, .55);
   transition: transform .3s;
-  
 }
 
 .blog-container {
