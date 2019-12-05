@@ -15,15 +15,17 @@ nav{
   display:flex;
   justify-content:center;
   opacity:0.98;
+  
 }
 nav a{
   text-decoration:none;
   color:#B0B0B0;
   font-size:1.15rem;
   padding:13px;
+  backface-visibility: hidden;
+  transition:0.5s;
 }
 nav:hover{
-  /* opacity:0.9; */
   color:#c4c4c4;
 }
 nav a:hover{
@@ -31,6 +33,12 @@ nav a:hover{
   transform:scale(1.08);
   transition: .5s cubic-bezier(0.2,0.8,0.2,1);
   color:#c4c4c4;
+}
+.resume{
+  color:white;
+}
+.resume:hover{
+  color:white;
 }
 /* nav a:hover{
   background: url(https://pub-static.haozhaopian.net/assets/stickers/6555/1db6ccd3-1be9-474a-8d98-aaf32fed654b_medium_thumb.jpg);
@@ -240,10 +248,13 @@ color:white;
   margin-bottom:15%;
   color:white;
   transition:0.5s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 .project:hover{
-  transform:scale(1.1);
-  transition: 0.6s;
+  transform:scale(1.05);
+  transition: 0.25s;
 }
 .project img{
   max-width:700px;
@@ -362,6 +373,7 @@ color:white;
   border-radius:5px;
   box-shadow: 0 10px 5px rgba(0,0 ,0, .55);
   transition: transform .3s;
+  
 }
 
 .blog-container {
