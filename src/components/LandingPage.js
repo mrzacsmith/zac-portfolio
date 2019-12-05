@@ -10,9 +10,10 @@ function LandingPage(props){
                          {/* <a href="#LandingPage"><img className="logo-home" src={KevinHome} alt="Home logo" /></a> */}
                          <div className='nav-link-container'>
                               <a href="#AboutMe">About</a>
-                              <a href="#Projects">Projects</a>
-                              <a href="#Contact">Contact</a>
+                              <a href="#Projects">Work</a>
                               <a href="https://drive.google.com/file/d/1ibcZg4aKwkamiGJtr4BCL2yFeXZCwqLD/view?usp=sharing" className="resume">Resume</a>
+                              <a href="#blog">Blog</a>
+                              <a href="#Contact">Connect</a>
                          </div>
                     </nav>
                </div>
@@ -23,9 +24,9 @@ function LandingPage(props){
                     <div className="credentials-title">
                     < br/>I am a <span className="emphasized-intro one highlight">Full Stack Web Developer</span>
                     < br/>with a <span className="emphasized-intro">Masters in Cybersecurity</span>.
-                    < br/><span className="smaller-title">Formerly a </span><span className="emphasized-intro three">cybersecurity researcher</span>, 
-                    < br/><span className="emphasized-intro three">crytocurrency data officer</span>,
-                    < br/>and <span className="emphasized-intro three">computer science professor</span>.
+                    < br/><span className="smaller-title">Formerly a </span><span className="emphasized-intro three">computer science professor</span>, 
+                    < br/><span className="emphasized-intro three">cybersecurity researcher</span>,
+                    < br/>and <span className="emphasized-intro three">cryptocurrency data officer</span>.
                     </div>
                </div>
           </div>

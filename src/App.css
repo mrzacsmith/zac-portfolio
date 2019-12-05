@@ -1,6 +1,6 @@
 body{
   background-color:#2D2C2C;
-font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat';
 }
 
 h1 h2 h3 {
@@ -14,6 +14,7 @@ nav{
   padding:0 3%;
   display:flex;
   justify-content:center;
+  opacity:0.98;
 }
 nav a{
   text-decoration:none;
@@ -104,10 +105,9 @@ color:white;
   margin:0 auto;
   background-color:#2D2C2C;
   color:#B0B0B0;
-  margin-top:50px;
-  padding-left:20px;
-  /* border:1px solid red; */
-  height:90vh;
+  /* margin-top:50px; */
+  /* padding-left:20px; */
+  height:100vh;
   font-size:2.5rem;
   font-weight:600;
   display:flex;
@@ -116,7 +116,6 @@ color:white;
 }
 .emphasized-intro{
   color:white;
-  /* border:1px solid red; */
 }
 .name-title{
   width:75%;
@@ -144,6 +143,7 @@ background-size: 98% 95%;
 padding: 10px 55px;
 color:white;
 }
+
 
 
 
@@ -239,29 +239,33 @@ color:white;
   max-width:700px;
   margin-bottom:15%;
   color:white;
+  transition:0.5s;
+}
+.project:hover{
+  transform:scale(1.1);
+  transition: 0.6s;
 }
 .project img{
   max-width:700px;
   width:100%;
   box-shadow: 0 8px 5px rgba(0,0 ,0, .55);
   margin-bottom:0;
-  filter:sepia(20%);
-}
-.project img:hover{
-  filter:sepia(0%);
 }
 
 .project h1{
-  margin-bottom:0;
-  margin-top:10px;
+  margin:13px 0;
+  margin-bottom:5px;
   font-size:2rem;
 }
 
 .project h3{
-  margin:0;
+  margin:0 auto;
 }
 .project-description{
   margin-top:0;
+  margin-bottom:0;
+  line-height:1.5;
+  font-size:1.05rem;
 }
 
 .tech-stack{
@@ -269,7 +273,7 @@ color:white;
   margin-bottom:15px;
   text-align:center;
   color:#B0B0B0;
-  font-size:0.95rem;
+  font-size:1rem;
 }
 
 .project-grad{
@@ -277,30 +281,33 @@ color:white;
   padding-top:0;
 }
 
-.project-gradient{
+/* .project-gradient{
   padding:4px;
   margin-right:10px;
-  /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
-    background-color:#4F4F4F;
-
-}
+  background-color:#4F4F4F;
+} */
 .project-subtitle{
-  font-size:1rem;
+  font-size:1.05rem;
   font-weight:400;
   color:#B0B0B0;
+}
+.tech-subheader{
+font-size:1.05rem;
+  margin:0 auto;
 }
 .project-button{
   background-color:#4F4F4F;
   border:none;
   padding:5.5px 35px;
   border-radius:10px;
-  color:white;
+  color:#B0B0B0;
   font-size:1rem;
   font-weight:400;
-  margin:0 10px;
+  /* margin:0 10px; */
 }
 .project-button:hover{
-  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  color:white;
+  background-color:#21252A;
 }
 .project-dec{
   border-bottom: 1px solid black;
@@ -314,6 +321,15 @@ padding: 10px 60px;
 color:white;
 }
  */
+ #code-icon{
+   height:auto;
+   width:20px;
+   box-shadow:none;
+   color:white;
+ }
+ #code-google{
+   color:white;
+ }
 
 
 
@@ -428,34 +444,76 @@ color:white;
 
   /* TODO CONTACT  */
 .contact-container{
-  margin-top:15%;
+  margin-top:13%;
   width:100%;
   background-color:#21252A;
-  height:140px;
+  height:170px;
   display:flex;
   align-items:center;
 }
 .icon-container{
-  max-width:600px;
+  max-width:1000px;
   width:100%;
   display:flex;
   flex-wrap:wrap;
   justify-content:space-between;
+  align-items:center;
   margin:0 auto;
   padding-top:10px;
 }
 .icon{
-  height:55px;
+  height:30px;
   -webkit-filter: grayscale(95%);
   filter: grayscale(95%);
-  box-shadow: 0 7px 5px rgba(0,0 ,0, .55);
+  transition: .15s;
+  /* box-shadow: 0 7px 5px rgba(0,0 ,0, .55); */
 }
 .icon:hover{
   -webkit-filter: grayscale(0%);
   filter:saturate(1.5);
-    transform:scale(1.08);
+    transform:scale(1.3);
   transition: .15s;
 }
 #medium-icon{
   border-radius:2px;
+}
+.divider{
+  background-color:#B0B0B0;
+  padding:43px 1px;
+  opacity:0.3;
+}
+
+.icon-container-1{
+  width:56%;
+  height:170px;
+  display:flex;
+  align-items:center;
+  align-content:center;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+}
+.icon-container-2{
+  width:43%;
+  height:170px;
+  display:flex;
+  align-items:center;
+  align-content:center;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+}
+.icon-container-title{
+  /* display:block; */
+  width:100%;
+  /* border:1px solid blue; */
+}
+.icon-container-title p{
+  margin:0;
+  padding:0;
+  display:flex;
+  align-items:flex-end;
+  color:#B0B0B0;
+  font-size:1.3rem;
+  justify-content:center;
+  margin-bottom:22px;
+  opacity:0.8;
 }

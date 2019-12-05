@@ -27,9 +27,9 @@ function AboutMe(){
                </div> */}
 
                <div>
-                    <div>
-                         <h1 className="about-title"><span className="about-headline">About</span></h1>
-                    </div>
+                    {/* <div>
+                         <h1 className="about-title"><span className="about-headline">README.md</span></h1>
+                    </div> */}
 
                     <div className="about-content-two">
                          <p className="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
