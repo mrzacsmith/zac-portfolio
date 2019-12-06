@@ -1,5 +1,6 @@
 import React from 'react'
 import aboutme from '../images/aboutme.jpeg'
+import Fade from 'react-reveal/Fade';
 
 function AboutMe(){
 
@@ -30,11 +31,12 @@ function AboutMe(){
                     {/* <div>
                          <h1 className="about-title"><span className="about-headline">README.md</span></h1>
                     </div> */}
-
+                    <Fade top>
                     <div className="about-content-two">
                          <p className="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> 
                          <img src={aboutme} alt="profile picture" className="profile-pic" />
                     </div>
+                    </Fade>
                </div>
 
           </div>)

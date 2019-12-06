@@ -2,15 +2,19 @@ import React from 'react'
 import immunify from '../images/immunify.png'
 import airbnb from '../images/airbnbApp.png'
 import code from '../images/code.png'
+import Fade from 'react-reveal/Fade';
+
 
 function Projects(){
 
-     return(<div className="project-container">
+     return(
+     
+     <div className="project-container">
           {/* <div className="project-header">
                <h1><span className="project-header-highlight">Projects</span></h1>
           </div> */}
-
-              <div className="project">
+          <Fade bottom>
+          <div className="project">
                <div>
                     <img src={airbnb} alt="project" />
                </div>
@@ -24,8 +28,9 @@ function Projects(){
                     </div>
                </div>
           </div>
-
+          </Fade>
          
+         <Fade left>
          <div className="project">
                <div>
                     <img src={immunify} alt="project" />
@@ -40,9 +45,10 @@ function Projects(){
                     </div>
                </div>
           </div>
+          </Fade>
 
-
-             <div className="project">
+          <Fade right>
+          <div className="project">
                <div>
                     <img src={airbnb} alt="project" />
                </div>
@@ -56,12 +62,12 @@ function Projects(){
                     </div>
                </div>
           </div>
+          </Fade>
 
 
 
 
-
-
+          <Fade bottom>
              <div className="project">
                <div>
                     <img src={immunify} alt="project" />
@@ -76,7 +82,7 @@ function Projects(){
                     </div>
                </div>
           </div>
-          
+          </Fade>
        
      </div>)
 }

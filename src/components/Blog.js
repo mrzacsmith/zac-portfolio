@@ -6,6 +6,7 @@ import octocat from '../images/octocat.png'
 import trump from '../images/trump.png'
 import weather from '../images/weather.png'
 import nodej from '../images/node-js-logo.jpg'
+import Fade from 'react-reveal/Fade';
 
 
 function Blog(){
@@ -15,7 +16,7 @@ function Blog(){
            {/* <div className="blog-name">
                     <h1 className="underline"><span className="blog-highlight">Blog</span></h1>
           </div> */}
-
+          <Fade bottom>
           <div className='blog'>
 
                <a href='https://medium.com/@mrzacsmith'>
@@ -94,7 +95,7 @@ function Blog(){
 
 
           </div>
-
+          </Fade>
           {/* <a href='https://medium.com/@mrzacsmith' /> 
           <a href='https://medium.com/@mrzacsmith/working-with-the-github-api-for-the-first-time-a-beginners-tale-98652ad1b342' />
           <a href='https://medium.com/@mrzacsmith/build-a-simple-weather-app-using-open-weather-map-using-vanilla-javascript-part-1-7aa014bff9ad' />

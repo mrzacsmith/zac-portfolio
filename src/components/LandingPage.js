@@ -1,5 +1,7 @@
 import React from 'react'
 import brush from '../images/brush-stroke-banner-7.png'
+import Fade from 'react-reveal/Fade';
+
 
 function LandingPage(props){
 
