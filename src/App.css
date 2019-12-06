@@ -114,7 +114,23 @@ nav a:hover{
   display:flex;
   flex-direction:column;
   justify-content:center;
+    animation: LogoAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode:forwards;
+    animation-timing-function:cubic-bezier(0.2,0.8,0.2,1)
 }
+@keyframes LogoAnimation {
+     0% {
+          opacity: 0;
+          transform: translateY(40px);
+     }
+     100%{
+          opacity: 1;
+          transform: translateY(0px);
+     }
+}
+
+
 .highlight {
   background: url(http://www.festivalclaca.cat/pics/b/21/215083_paint-stroke-png.png);
   background-repeat: no-repeat;
@@ -155,6 +171,7 @@ nav a:hover{
 
 
 
+
 /* todo - ABOUT ME SECTION */
 .profile-pic{
   width:100%;
@@ -172,6 +189,8 @@ nav a:hover{
   font-size:1.1rem;
   /* border:1px solid red; */
 }
+
+
 .about{
   width:30%;
   height:auto;
