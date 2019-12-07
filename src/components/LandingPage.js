@@ -11,11 +11,11 @@ function LandingPage(props){
                     <nav>
                          {/* <a href="#LandingPage"><img className="logo-home" src={KevinHome} alt="Home logo" /></a> */}
                          <div className='nav-link-container'>
-                              <a href="#AboutMe">About</a>
-                              <a href="#Projects">Work</a>
+                              <a href="#about">About</a>
+                              <a href="#projects">Work</a>
                               <a href="https://drive.google.com/file/d/1ibcZg4aKwkamiGJtr4BCL2yFeXZCwqLD/view?usp=sharing" className="resume">Resume</a>
                               <a href="#blog">Blog</a>
-                              <a href="#Contact">Connect</a>
+                              <a href="#contact">Connect</a>
                          </div>
                     </nav>
                </div>

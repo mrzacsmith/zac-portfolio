@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 function AboutMe(){
 
      return(
-          <div className="aboutme-container">
+          <div className="aboutme-container" id="about">
 
                {/* <div>
                     <img src={aboutme} alt="profile picture" className="profile-pic" />

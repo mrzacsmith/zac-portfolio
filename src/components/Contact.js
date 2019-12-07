@@ -10,7 +10,7 @@ import youtube from '../images/youtube.png'
 function Contact(){
 
      return(
-     <div className="contact-container">
+     <div className="contact-container" id="contact">
           <div className="icon-container">
                 
           <div className="icon-container-1">

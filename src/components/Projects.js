@@ -9,7 +9,7 @@ function Projects(){
 
      return(
      
-     <div className="project-container">
+     <div className="project-container" id="projects">
           {/* <div className="project-header">
                <h1><span className="project-header-highlight">Projects</span></h1>
           </div> */}

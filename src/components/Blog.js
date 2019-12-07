@@ -13,11 +13,8 @@ function Blog(){
 
      return(
      <div>
-           {/* <div className="blog-name">
-                    <h1 className="underline"><span className="blog-highlight">Blog</span></h1>
-          </div> */}
-          <Fade bottom>
-          <div className='blog'>
+          <Fade>
+          <div className='main-blog-container' id="blog">
 
                <a href='https://medium.com/@mrzacsmith'>
                <div className="blog-container">
