@@ -1,3 +1,7 @@
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   background-color:#2D2C2C;
 font-family: 'Montserrat';
@@ -179,6 +183,7 @@ nav a:hover{
 }
 .aboutme-container{
   margin:0 auto;
+  padding-top:15%;
   max-width:800px;
   width:100%;
   display:flex;
@@ -251,6 +256,7 @@ color:white;
 }
 .project-container{
   max-width:900px;
+  padding-top:13%;
   width:100%;
   margin:0 auto;
   margin-bottom:30px;
@@ -367,8 +373,9 @@ color:white;
 
 
 /* TODO: CHANGE WIDHT TO 100% / height to auto   */
-.blog{
+.main-blog-container{
   max-width:900px;
+  padding-top:10%;
   width:100%;
   margin:0 auto;
   display:flex;
