@@ -1,5 +1,4 @@
 import React from 'react'
-import brush from '../images/brush-stroke-banner-7.png'
 import Fade from 'react-reveal/Fade';
 
 
@@ -9,7 +8,6 @@ function LandingPage(props){
            <div>
                <div className="nav-bar">
                     <nav>
-                         {/* <a href="#LandingPage"><img className="logo-home" src={KevinHome} alt="Home logo" /></a> */}
                          <div className='nav-link-container'>
                               <a href="#about">About</a>
                               <a href="#projects">Work</a>
@@ -21,18 +19,6 @@ function LandingPage(props){
                </div>
 
                <div className="landing-page">
-                    {/* <div className="name-title">Hello, my name is <h1><span className="name">Zachery Smith</span>.</h1>
-                         <div className="credentials-title">
-                         < br/>I am a <span className="emphasized-intro one highlight">Full Stack Web Developer</span>
-                         < br/>with a <span className="emphasized-intro">Masters in Cybersecurity</span>.
-                         < br/><span className="smaller-title">Formerly a </span><span className="emphasized-intro three">computer science professor</span>, 
-                         < br/><span className="emphasized-intro three">cybersecurity researcher</span>,
-                         < br/>and <span className="emphasized-intro three">cryptocurrency data officer</span>.
-                         </div>
-                    </div>  */}
-
-
-
                     <div className="landing-page-title">
                          <p>
                               <span className="name-intro">Hello, my name is</span>
@@ -45,9 +31,6 @@ function LandingPage(props){
                          </p>
                     </div>
                </div>
-
-
-
           </div>
      )
 }
