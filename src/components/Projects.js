@@ -1,7 +1,6 @@
 import React from 'react'
 import immunify from '../images/immunify.png'
 import airbnb from '../images/airbnbApp.png'
-import code from '../images/code.png'
 import Fade from 'react-reveal/Fade';
 
 
@@ -10,9 +9,6 @@ function Projects(){
      return(
      
      <div className="project-container" id="projects">
-          {/* <div className="project-header">
-               <h1><span className="project-header-highlight">Projects</span></h1>
-          </div> */}
           <Fade bottom>
           <div className="project">
                <div>
