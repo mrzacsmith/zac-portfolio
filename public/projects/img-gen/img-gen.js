@@ -1,13 +1,13 @@
 let topTextInput, bottomTextInput, imgInput, generateBtn, canvas, ctx
 
-function generateImage(img) {
+const generateImage = (img) => {
   canvas.width = img.width
   canvas.height = img.height
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   ctx.drawImage(img, 0, 0)
 }
 
-function init() {
+const init = () => {
   topTextInput = document.getElementById('top-text')
   bottomTextInput = document.getElementById('bottom-text')
   imgInput = document.getElementById('img-input')
