@@ -10,9 +10,12 @@ const generateImage = (img, topText, bottomText) => {
   ctx.font = fontsize + 'px Impact'
   ctx.fillStyle = 'red'
   ctx.strokeStyle = 'black'
+  ctx.textAlign = 'center'
   ctx.lineWidth = fontsize / 15
 
-  ctx.fillText(topText, canvas.width / 2, fontsize, canvas.width)
+  ctx.textBaseline = 'top'
+  ctx.fillText(topText, canvas.width / 2, 0, canvas.width)
+  ctx.strokeText(topText, canvas.width / 2, 0, canvas.width)
 }
 
 const init = () => {
