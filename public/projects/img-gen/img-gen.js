@@ -6,13 +6,13 @@ const generateImage = (img, topText, bottomText) => {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   ctx.drawImage(img, 0, 0)
 
-  // let fontsize = canvas.width / 15
-  // ctx.font = fontsize + 'px Impact'
-  // ctx.fillStyle = 'white'
-  // ctx.strokeStyle = 'black'
-  // ctx.lineWidth = fontsize / 15
+  let fontsize = canvas.width / 15
+  ctx.font = fontsize + 'px Impact'
+  ctx.fillStyle = 'red'
+  ctx.strokeStyle = 'black'
+  ctx.lineWidth = fontsize / 15
 
-  // ctx.fillText(topText, canvas.width / 2, 30, canvas.width)
+  ctx.fillText(topText, canvas.width / 2, fontsize, canvas.width)
 }
 
 const init = () => {
@@ -27,7 +27,7 @@ const init = () => {
   generateBtn.addEventListener('click', () => {
     let reader = new FileReader()
     reader.onload = function () {
-      let img = new Image
+      let img = new Image()
       img.src = reader.result
       generateImage(img, topTextInput.value, bottomTextInput.value)
     }
