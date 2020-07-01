@@ -13,9 +13,15 @@ const generateImage = (img, topText, bottomText) => {
   ctx.textAlign = 'center'
   ctx.lineWidth = fontsize / 15
 
+  // top text
   ctx.textBaseline = 'top'
-  ctx.fillText(topText, canvas.width / 2, 0, canvas.width)
-  ctx.strokeText(topText, canvas.width / 2, 0, canvas.width)
+  ctx.fillText(topText, canvas.width / 2, 5, canvas.width)
+  ctx.strokeText(topText, canvas.width / 2, 5, canvas.width)
+
+  // bottom text
+  ctx.textBaseline = 'bottom'
+  ctx.fillText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
+  ctx.strokeText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
 }
 
 const init = () => {
