@@ -15,30 +15,13 @@ const generateImage = (img, topText, bottomText) => {
 
   // top text
   ctx.textBaseline = 'top'
-  topText.split('\n').forEach((text, index) => {
-    ctx.fillText(text, canvas.width / 2, index * fontSize, canvas.width)
-    ctx.strokeText(text, canvas.width / 2, index * fontSize, canvas.width)
-  })
+  ctx.fillText(topText, canvas.width / 2, 5, canvas.width)
+  ctx.strokeText(topText, canvas.width / 2, 5, canvas.width)
 
+  // bottom text
   ctx.textBaseline = 'bottom'
-  bottomText
-    .split('\n')
-    .reverse()
-    .forEach((text, index) => {
-      // bottom text
-      ctx.fillText(
-        text,
-        canvas.width / 2,
-        canvas.height - index * fontSize,
-        canvas.width
-      )
-      ctx.strokeText(
-        text,
-        canvas.width / 2,
-        canvas.height - index * fontSize,
-        canvas.width
-      )
-    })
+  ctx.fillText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
+  ctx.strokeText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
 }
 
 const init = () => {
