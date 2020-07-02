@@ -24,26 +24,26 @@ const generateImage = (img, topText, bottomText) => {
   // bottom text
   ctx.textBaseline = 'bottom'
 
-  bottomText
-    .split('\n')
-    .reverse()
-    .forEach((t, i) => {
-      // .reverse() because it's drawing the bottom text from the bottom up
-      ctx.fillText(
-        t,
-        canvas.width / 2,
-        canvas.height - i * fontSize,
-        canvas.width
-      )
-      ctx.strokeText(
-        t,
-        canvas.width / 2,
-        canvas.height - i * fontSize,
-        canvas.width
-      )
-    })
-  // ctx.fillText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
-  // ctx.strokeText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
+  // bottomText
+  //   .split('\n')
+  //   .reverse()
+  //   .forEach((t, i) => {
+  //     // .reverse() because it's drawing the bottom text from the bottom up
+  //     ctx.fillText(
+  //       t,
+  //       canvas.width / 2,
+  //       canvas.height - i * fontSize,
+  //       canvas.width
+  //     )
+  //     ctx.strokeText(
+  //       t,
+  //       canvas.width / 2,
+  //       canvas.height - i * fontSize,
+  //       canvas.width
+  //     )
+  //   })
+  ctx.fillText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
+  ctx.strokeText(bottomText, canvas.width / 2, canvas.height - 5, canvas.width)
 }
 
 const init = () => {
