@@ -15,8 +15,11 @@ const generateImage = (img, topText, bottomText) => {
 
   // top text
   ctx.textBaseline = 'top'
-  ctx.fillText(topText, canvas.width / 2, 5, canvas.width)
-  ctx.strokeText(topText, canvas.width / 2, 5, canvas.width)
+
+  topText.split('\n').forEach((t, i) => {
+    ctx.fillText(t, canvas.width / 2, i * fontsize, canvas.width)
+    ctx.strokeText(t, canvas.width / 2, i * fontsize, canvas.width)
+  })
 
   // bottom text
   ctx.textBaseline = 'bottom'
