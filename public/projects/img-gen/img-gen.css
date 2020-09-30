@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  /* font-size: 62.5%; */
+}
+
+.container {
+  max-width: 1200px;
+  padding: 25px;
+  width: 100%;
+  margin: 25px auto;
+  background: #ccc;
+  border-radius: 10px;
+}
+
+#img-canvas {
+  margin-top: 15px;
+  max-width: 95%;
+}
