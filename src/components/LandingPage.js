@@ -34,7 +34,7 @@ function LandingPage(props) {
             <br />
             Former <span className="white">computer science professor</span>,
             <br />
-            <span className="white">cybersecurity researcer</span>,
+            <span className="white">cybersecurity researcher</span>,
             <br />
             and <span className="white">cryptocurrency data officer</span>.
           </p>
