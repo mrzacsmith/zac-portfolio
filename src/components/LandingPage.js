@@ -10,7 +10,7 @@ function LandingPage(props) {
             {/* <a href="#about">About</a> */}
             {/* <a href="#projects">Work</a> */}
             <a
-              href="https://drive.google.com/file/d/197KWSOGt0g5giLcA5YwtmNw7JxWrHW2Q/view?usp=sharing"
+              href="https://resume.creddle.io/resume/ecbodmaf3kz"
               className="resume"
             >
               Resume
